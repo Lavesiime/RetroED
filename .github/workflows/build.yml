@@ -1,0 +1,28 @@
+name: Build RSDKv4
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  windows-x64:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+      - name: Build RetroED
+        run: |
+          msbuild RetroED.sln /p:Configuration=Release /p:Platform=x64 /p:ForceImportBeforeCppTargets="$env:GITHUB_WORKSPACE/props/winactions_x64.props"
+      - name: Move artifacts
+        run: |
+          mkdir artifacts
+          move ./build/x64/Release/*.dll ./artifacts 
+          move ./build/x64/Release/*.exe ./artifacts
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v1.0.0  
+        with:
+          name: v4-windows-x64 
+          path: artifacts  
+          
