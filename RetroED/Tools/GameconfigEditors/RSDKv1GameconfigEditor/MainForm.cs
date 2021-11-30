@@ -50,7 +50,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv1GameconfigEditor
             RefreshUI();
             RetroED.MainForm.Instance.CurrentTabText = "New Gameconfig";
 
-            string RSDK = "RSDKv1";
+            string RSDK = "RSDKv2";
             string dispname = "";
             RetroED.MainForm.Instance.CurrentTabText = "New Gameconfig";
             dispname = "New Gameconfig";
@@ -71,7 +71,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv1GameconfigEditor
             refreshLists();
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKv1";
+            string RSDK = "RSDKv2";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -104,7 +104,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv1GameconfigEditor
             FILEPATH = Filepath;
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKv1";
+            string RSDK = "RSDKv2";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -160,7 +160,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv1GameconfigEditor
                     break;
             }
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "RSDKv1 Gameconfig Files|Gameconfig*.bin";
+            dlg.Filter = "RSDKv2 Gameconfig Files|Gameconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 writeLineToConsole(dlg.FileName);
@@ -172,7 +172,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv1GameconfigEditor
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.Filter = "RSDKv1 Gameconfig Files|Gameconfig*.bin";
+            dlg.Filter = "RSDKv2 Gameconfig Files|Gameconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 Save(dlg.FileName);

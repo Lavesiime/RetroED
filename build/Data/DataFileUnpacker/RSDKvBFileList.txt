@@ -18,6 +18,7 @@ Bytecode/Zone10.bin
 Bytecode/Zone11.bin
 Bytecode/Zone12.bin
 Bytecode/ZoneM.bin
+Bytecode/GlobalCode.bin
 Data/Animations/KnucklesSS.ani
 Data/Animations/SonicSS.ani
 Data/Animations/SuperSonic.ani
