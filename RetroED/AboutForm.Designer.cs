@@ -82,6 +82,14 @@
             // 
             // label6
             // 
+
+            // Lave sIime note:
+            //   We seem to be censoring this person from other places so I wasn't sure if I should do the same
+            //   here, I know they assisted with this program so they probably deserve credit, but
+            //   the same could be said for other projects from which they've been removed/censored.
+            //   In the end, I just left this section alone because I feel like it isn't my place to do this,
+            //   but if something needs to be done, just let me know and I'll... nothing,
+            //   really, I can't do much anyway
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.Location = new System.Drawing.Point(15, 118);

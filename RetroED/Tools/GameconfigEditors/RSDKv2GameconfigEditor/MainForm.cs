@@ -50,7 +50,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
             RefreshUI();
             RetroED.MainForm.Instance.CurrentTabText = "New Gameconfig";
 
-            string RSDK = "RSDKv2";
+            string RSDK = "RSDKv3";
             string dispname = "";
             RetroED.MainForm.Instance.CurrentTabText = "New Gameconfig";
             dispname = "New Gameconfig";
@@ -71,7 +71,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
             refreshLists();
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKv2";
+            string RSDK = "RSDKv3";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -104,7 +104,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
             FILEPATH = Filepath;
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKv2";
+            string RSDK = "RSDKv3";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -151,7 +151,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv2 Gameconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
+            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv3 Gameconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
             {
                 case System.Windows.Forms.DialogResult.Cancel:
                     return;
@@ -160,7 +160,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
                     break;
             }
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "RSDKv2 Gameconfig Files|Gameconfig*.bin";
+            dlg.Filter = "RSDKv3 Gameconfig Files|Gameconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 writeLineToConsole(dlg.FileName);
@@ -172,7 +172,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.Filter = "RSDKv2 Gameconfig Files|Gameconfig*.bin";
+            dlg.Filter = "RSDKv3 Gameconfig Files|Gameconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 Save(dlg.FileName);
@@ -429,7 +429,7 @@ namespace RetroED.Tools.GameconfigEditors.RSDKv2GameconfigEditor
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv2 Gameconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
+            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv3 Gameconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
             {
                 case System.Windows.Forms.DialogResult.Cancel:
                     return;

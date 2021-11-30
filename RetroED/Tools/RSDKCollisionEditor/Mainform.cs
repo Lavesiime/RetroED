@@ -111,7 +111,7 @@ namespace RetroED.Tools.CollisionEditor
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Title = "Open";
             dlg.DefaultExt = ".bin";
-            dlg.Filter = "RSDKv1/RSDKv2/RSDKvB Tileconfig Files (CollisionMasks.bin)|CollisionMasks.bin";
+            dlg.Filter = "RSDKv2/RSDKv3/RSDKv4 Tileconfig Files (CollisionMasks.bin)|CollisionMasks.bin";
 
             if (dlg.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {
@@ -163,7 +163,7 @@ namespace RetroED.Tools.CollisionEditor
             SaveFileDialog dlg = new SaveFileDialog();
             dlg.Title = "Save As...";
             dlg.DefaultExt = ".bin";
-            dlg.Filter = "RSDKv1/RSDKv2/RSDKvB Tileconfig Files (CollisionMasks.bin)|CollisionMasks.bin";
+            dlg.Filter = "RSDKv2/RSDKv3/RSDKv4 Tileconfig Files (CollisionMasks.bin)|CollisionMasks.bin";
 
             if (dlg.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
             {

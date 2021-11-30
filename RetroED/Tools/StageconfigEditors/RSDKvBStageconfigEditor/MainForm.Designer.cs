@@ -388,7 +388,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Menu = this.mainMenu1;
             this.Name = "MainForm";
-            this.Text = "RSDKvB Stageconfig Manager";
+            this.Text = "RSDKv4 Stageconfig Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.ObjectsPage.ResumeLayout(false);

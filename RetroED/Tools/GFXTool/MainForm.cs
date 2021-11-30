@@ -66,29 +66,36 @@ namespace RetroED.Tools.GFXTool
                     switch (dlg.FilterIndex - 1)
                     {
                         case 0:
-                        string txt0 = this.Text;
-                        this.Text = "Exporting - " + txt0;
-                        GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Png); //Export to indexed PNG
-                        this.Text = txt0;
-                        break;
+                            // PNG
+                            string txt0 = this.Text;
+                            this.Text = "Exporting - " + txt0;
+                            GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Png); //Export to indexed PNG
+                            this.Text = txt0;
+                            break;
+
                         case 1:
-                        string txt1 = this.Text;
-                        this.Text = "Exporting - " + txt1;
-                        GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Gif); //Export to indexed GIF
-                        this.Text = txt1;
-                        break;
+                            // GIF
+                            string txt1 = this.Text;
+                            this.Text = "Exporting - " + txt1;
+                            GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Gif); //Export to indexed GIF
+                            this.Text = txt1;
+                            break;
+
                         case 2:
-                        string txt2 = this.Text;
-                        this.Text = "Exporting - " + txt2;
-                        GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Bmp); //Export to indexed BMP
-                        this.Text = txt2;
-                        break;
+                            // BMP
+                            string txt2 = this.Text;
+                            this.Text = "Exporting - " + txt2;
+                            GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Bmp); //Export to indexed BMP
+                            this.Text = txt2;
+                            break;
+
                         default:
-                        string txt3 = this.Text;
-                        this.Text = "Exporting - " + txt3;
-                        GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Gif); //Export to indexed GIF
-                        this.Text = txt3;
-                        break;
+                            // Default - GIF
+                            string txt3 = this.Text;
+                            this.Text = "Exporting - " + txt3;
+                            GFX.export(dlg.FileName, System.Drawing.Imaging.ImageFormat.Gif); //Export to indexed GIF
+                            this.Text = txt3;
+                            break;
                     }
             }
 

@@ -321,7 +321,7 @@
             // importFromGenesisGamesToolStripMenuItem
             // 
             this.importFromGenesisGamesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.importFromGenesisGamesToolStripMenuItem.Enabled = false;
+            this.importFromGenesisGamesToolStripMenuItem.Enabled = true; // please dont breake
             this.importFromGenesisGamesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.importFromGenesisGamesToolStripMenuItem.Name = "importFromGenesisGamesToolStripMenuItem";
             this.importFromGenesisGamesToolStripMenuItem.Size = new System.Drawing.Size(281, 26);

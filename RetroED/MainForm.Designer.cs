@@ -146,7 +146,7 @@
             // 
             this.MenuItem_MapEditor.Index = 2;
             this.MenuItem_MapEditor.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftM;
-            this.MenuItem_MapEditor.Text = "Scene Editor";
+            this.MenuItem_MapEditor.Text = "Scene Editor (BROKEN!)"; // temp lol just wait for retroed2
             this.MenuItem_MapEditor.Click += new System.EventHandler(this.MenuItem_MapEditor_Click);
             // 
             // menuItem6
@@ -188,13 +188,13 @@
             // 
             this.MenuItem_PaletteEditor.Index = 6;
             this.MenuItem_PaletteEditor.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftP;
-            this.MenuItem_PaletteEditor.Text = "Palette Editor";
+            this.MenuItem_PaletteEditor.Text = "Palette Editor (BROKEN)"; // either use the "preview" build or just use a normal palette editor
             this.MenuItem_PaletteEditor.Click += new System.EventHandler(this.MenuItem_PaletteEditor_Click);
             // 
             // MenuItem_ScriptEditor
             // 
             this.MenuItem_ScriptEditor.Index = 7;
-            this.MenuItem_ScriptEditor.Text = "Script Editor";
+            this.MenuItem_ScriptEditor.Text = "Script Editor (DEPRECIATED)";
             this.MenuItem_ScriptEditor.Click += new System.EventHandler(this.MenuItem_ScriptEditor_Click);
             // 
             // menuItem10
@@ -223,19 +223,19 @@
             // menuItem13
             // 
             this.menuItem13.Index = 2;
-            this.menuItem13.Text = "RSDKv1 Gameconfig Editor";
+            this.menuItem13.Text = "RSDKv2 Gameconfig Editor";
             this.menuItem13.Click += new System.EventHandler(this.menuItem13_Click);
             // 
             // menuItem15
             // 
             this.menuItem15.Index = 3;
-            this.menuItem15.Text = "RSDKv2 Gameconfig Editor";
+            this.menuItem15.Text = "RSDKv3 Gameconfig Editor";
             this.menuItem15.Click += new System.EventHandler(this.menuItem15_Click);
             // 
             // menuItem16
             // 
             this.menuItem16.Index = 4;
-            this.menuItem16.Text = "RSDKvB Gameconfig Editor";
+            this.menuItem16.Text = "RSDKv4 Gameconfig Editor";
             this.menuItem16.Click += new System.EventHandler(this.menuItem16_Click);
             // 
             // menuItem11
@@ -257,19 +257,19 @@
             // menuItem17
             // 
             this.menuItem17.Index = 1;
-            this.menuItem17.Text = "RSDKv1 Stageconfig Editor";
+            this.menuItem17.Text = "RSDKv2 Stageconfig Editor";
             this.menuItem17.Click += new System.EventHandler(this.menuItem17_Click);
             // 
             // menuItem18
             // 
             this.menuItem18.Index = 2;
-            this.menuItem18.Text = "RSDKv2 Stageconfig Editor";
+            this.menuItem18.Text = "RSDKv3 Stageconfig Editor";
             this.menuItem18.Click += new System.EventHandler(this.menuItem18_Click);
             // 
             // menuItem19
             // 
             this.menuItem19.Index = 3;
-            this.menuItem19.Text = "RSDKvB Stageconfig Editor";
+            this.menuItem19.Text = "RSDKv4 Stageconfig Editor";
             this.menuItem19.Click += new System.EventHandler(this.menuItem19_Click);
             // 
             // MenuItem_GFXTool

@@ -41,9 +41,9 @@
             this.RSDKVerBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RSDKVerBox.FormattingEnabled = true;
             this.RSDKVerBox.Items.AddRange(new object[] {
-            "RSDKvB (Sonic 1/Sonic 2)",
-            "RSDKv2 (Sonic CD)",
-            "RSDKv1 (Sonic Nexus)",
+            "RSDKv4 (Sonic 1/Sonic 2)",
+            "RSDKv3 (Sonic CD)",
+            "RSDKv2 (Sonic Nexus)",
             "RSDKvRS (Retro-Sonic (2007))"});
             this.RSDKVerBox.Location = new System.Drawing.Point(12, 67);
             this.RSDKVerBox.Name = "RSDKVerBox";

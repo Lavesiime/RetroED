@@ -146,13 +146,13 @@ namespace RetroED.Tools.BackgroundEditor
                 switch (engineType)
                 {
                     case Retro_Formats.EngineType.RSDKvB:
-                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKvB)";
+                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKv4)";
                         break;
                     case Retro_Formats.EngineType.RSDKv2:
-                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKv2)";
+                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKv3)";
                         break;
                     case Retro_Formats.EngineType.RSDKv1:
-                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKv1)";
+                        RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKv2)";
                         break;
                     case Retro_Formats.EngineType.RSDKvRS:
                         RetroED.MainForm.Instance.rp.details = "Editing: " + dispname + " (RSDKvRS)";

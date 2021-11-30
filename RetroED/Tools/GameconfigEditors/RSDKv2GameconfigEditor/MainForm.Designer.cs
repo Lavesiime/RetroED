@@ -203,7 +203,7 @@
             this.GameNameTxt.Name = "GameNameTxt";
             this.GameNameTxt.Size = new System.Drawing.Size(430, 19);
             this.GameNameTxt.TabIndex = 0;
-            this.GameNameTxt.Text = "RSDKv2 Game";
+            this.GameNameTxt.Text = "RSDKv3 Game";
             this.GameNameTxt.TextChanged += new System.EventHandler(this.GameNameTxt_TextChanged);
             // 
             // tabControl1
@@ -933,7 +933,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Menu = this.mainMenu1;
             this.Name = "MainForm";
-            this.Text = "RSDKv2 Gameconfig Manager";
+            this.Text = "RSDKv3 Gameconfig Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);

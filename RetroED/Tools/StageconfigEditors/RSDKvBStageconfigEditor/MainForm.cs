@@ -46,7 +46,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
             RefreshUI();
             RetroED.MainForm.Instance.CurrentTabText = "New stageconfig";
 
-            string RSDK = "RSDKvB";
+            string RSDK = "RSDKv4";
             string dispname = "";
             RetroED.MainForm.Instance.CurrentTabText = "New Stageconfig";
             dispname = "New Stageconfig";
@@ -67,7 +67,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
             refreshLists();
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKvB";
+            string RSDK = "RSDKv4";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -100,7 +100,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
             FILEPATH = Filepath;
             RetroED.MainForm.Instance.CurrentTabText = Path.GetFileName(Filepath);
 
-            string RSDK = "RSDKvB";
+            string RSDK = "RSDKv4";
             string dispname = "";
             string folder = Path.GetDirectoryName(Filepath);
             DirectoryInfo di = new DirectoryInfo(folder);
@@ -147,7 +147,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKvB Stageconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
+            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv4 Stageconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
             {
                 case System.Windows.Forms.DialogResult.Cancel:
                     return;
@@ -156,7 +156,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
                     break;
             }
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Filter = "RSDKvB Stageconfig Files|Stageconfig*.bin";
+            dlg.Filter = "RSDKv4 Stageconfig Files|Stageconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 writeLineToConsole(dlg.FileName);
@@ -168,7 +168,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.Filter = "RSDKvB stageconfig Files|stageconfig*.bin";
+            dlg.Filter = "RSDKv4 stageconfig Files|stageconfig*.bin";
             if (dlg.ShowDialog(this) == DialogResult.OK)
             {
                 Save(dlg.FileName);
@@ -274,7 +274,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKvB Stageconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
+            switch (MessageBox.Show(this, "Do you want to save the current file?", "RSDKv4 Stageconfig Editor", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning))
             {
                 case System.Windows.Forms.DialogResult.Cancel:
                     return;
@@ -323,7 +323,7 @@ namespace RetroED.Tools.StageconfigEditors.RSDKvBStageconfigEditor
 
         private void RemoveSFXButton_Click(object sender, EventArgs e)
         {
-            if (SoundFXListBox.Items.Count > 0)
+            if (SoundFXListBox.Items.Count > 0) // At least 1 SFX needs to be present
             {
                 stageconfig.SoundFX.RemoveAt(CurSfx);
                 CurSfx--;

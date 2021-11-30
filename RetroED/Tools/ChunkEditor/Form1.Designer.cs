@@ -656,7 +656,7 @@
             this.MenuItem_Save.Index = 2;
             this.MenuItem_Save.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
             this.MenuItem_Save.Text = "&Save";
-            this.MenuItem_Save.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            this.MenuItem_Save.Click += new System.EventHandler(this.saveToolStripMenuItem_Click); // Formerly the "Open" option...
             // 
             // MenuItem_SaveAs
             // 

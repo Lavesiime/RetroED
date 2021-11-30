@@ -176,7 +176,7 @@
             this.GameNameTxt.Name = "GameNameTxt";
             this.GameNameTxt.Size = new System.Drawing.Size(430, 19);
             this.GameNameTxt.TabIndex = 0;
-            this.GameNameTxt.Text = "RSDKvB Game";
+            this.GameNameTxt.Text = "RSDKv4 Game";
             this.GameNameTxt.TextChanged += new System.EventHandler(this.GameNameTxt_TextChanged);
             // 
             // tabControl1
@@ -290,6 +290,7 @@
             this.DelStgButton.TabIndex = 61;
             this.DelStgButton.Text = "Del";
             this.DelStgButton.UseVisualStyleBackColor = true;
+            this.DelStgButton.Click += new System.EventHandler(this.DelStgButton_Click);
             // 
             // AddStgButton
             // 
@@ -300,6 +301,7 @@
             this.AddStgButton.TabIndex = 60;
             this.AddStgButton.Text = "Add";
             this.AddStgButton.UseVisualStyleBackColor = true;
+            this.AddStgButton.Click += new System.EventHandler(this.AddStgButton_Click);
             // 
             // label6
             // 
@@ -929,7 +931,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Menu = this.mainMenu1;
             this.Name = "MainForm";
-            this.Text = "RSDKvB Gameconfig Manager";
+            this.Text = "RSDKv4 Gameconfig Manager";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
