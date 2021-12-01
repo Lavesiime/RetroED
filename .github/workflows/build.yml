@@ -16,7 +16,7 @@ jobs:
         run : |
           Invoke-WebRequest -Uri "https://github.com/Rubberduckycooly/RSDK-Reverse/archive/9b7daedeba9a481b0b674cf1cb88077401685a1b.zip" -OutFile "rsdkreverse.zip"
           Expand-Archive -Path rsdkreverse.zip -DestinationPath ./
-          rm -f ./RSDK-Reverse
+          rm -r ./RSDK-Reverse
           Rename-Item ./RSDK-Reverse-9b7daedeba9a481b0b674cf1cb88077401685a1b RSDK-Reverse
       - name: Build RetroED
         run: |
