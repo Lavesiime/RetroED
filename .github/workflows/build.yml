@@ -12,6 +12,11 @@ jobs:
         uses: actions/checkout@v1
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1
+      - name: Download RSDK Reverse
+        run : |
+          Invoke-WebRequest -Uri "https://github.com/Rubberduckycooly/RSDK-Reverse/archive/9b7daedeba9a481b0b674cf1cb88077401685a1b.zip" -OutFile "rsdkreverse.zip"
+          Expand-Archive -Path rsdkreverse.zip -DestinationPath ./
+          Rename-Item ./RSDK-Reverse-9b7daedeba9a481b0b674cf1cb88077401685a1b RSDK-Reverse
       - name: Build RetroED
         run: |
           msbuild RetroED.sln /p:Configuration=Release /p:Platform=x64 /p:ForceImportBeforeCppTargets="$env:GITHUB_WORKSPACE/props/winactions_x64.props"
